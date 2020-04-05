@@ -1,0 +1,37 @@
+message:
+  command: "&b/<command> <command_sub> <command_args> §c<command_description>"
+  reload: "&a配置文件重载成功！"
+  cant_do_it: "&c你不能这么做!"
+  show_on: "&a你开启了拾取提示!"
+  show_off: "&c你关闭了拾取显示！"
+  console: "禁止在后台操作此指令"
+  error_command: "&c你输入的指令错误!"
+  block_on: "&a你开启了丢弃物品后别人暂时禁止拾取"
+  block_off: "&c你关闭了丢弃物品后别人暂时禁止拾取"
+  prefix: "&e[拾取系统]: "
+  #<item_name>为物品名字的变量 #<amount>为物品数量
+  pick_success: "&a你获取了 <item_name> ×[<amount>]"
+  #此处变量为物品名字<item_name> 玩家名字<player>
+  pick_fault: "&c这个掉落物品[<item_name>]不属于你 这是<player>的"
+Functions:
+#true为开 false为关
+  #物品有其他名字(非原版物品名字)才提示 false为显示原版物品名字（需要MiaoChat才能显示原版）
+  displayname: true
+  #物品掉落绑定玩家（关联下面的Drops）
+  bind: true
+  #物品掉落后绑定玩家多久(与丢弃保护一样)
+  bind_time: 20
+  #拾取失败提示几秒发送一次
+  block_time: 2
+  #获取实体死亡后多少半径附近的物品
+  X: 3
+  Y: 3
+  Z: 3
+  #指定哪种实体才会进行绑定判断 改为all为全部（未测试是否支持） null为不启用 此处为自定义NPC
+  entity: 'CUSTOMNPCS_CUSTOMNPC'
+  #强行注销RPG_Items监听玩家拾取事件监听器(RPG_Items会吞取暂时绑定在玩家的掉落物品)
+  Unregister: false
+#掉落物 名字判定(包含即可) 实体名字必须对应
+Drops:
+  僵尸:
+    - '233'

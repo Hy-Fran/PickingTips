@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PickingTips">
+    <output-path>$PROJECT_DIR$/out/artifacts/PickingTips</output-path>
+    <root id="archive" name="PickingTips.jar">
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/java/config.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/java/plugin.yml" />
+      <element id="module-output" name="PickingTips" />
+    </root>
+  </artifact>
+</component>
