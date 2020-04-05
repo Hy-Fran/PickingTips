@@ -23,8 +23,8 @@ public class Listener implements org.bukkit.event.Listener {
     @EventHandler
     private void onJoin(PlayerJoinEvent event){
         Variable.map.put(event.getPlayer(),true);
-        Variable.blockingPickup.put(event.getPlayer(),false);
-        Variable.blocktips.put(event.getPlayer(),true);
+        Variable.blockingPickup.put(event.getPlayer(),pickingTips.config.getBoolean("Functions.blocking_pickup"));
+        Variable.blocktips.put(event.getPlayer(),false);
     }
 
     @EventHandler

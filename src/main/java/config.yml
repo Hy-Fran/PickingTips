@@ -23,6 +23,8 @@ Functions:
   bind_time: 20
   #拾取失败提示几秒发送一次
   block_time: 2
+  #丢弃保护 默认给每个玩家开
+  blocking_pickup: true
   #获取实体死亡后多少半径附近的物品
   X: 3
   Y: 3
