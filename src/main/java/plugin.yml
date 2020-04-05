@@ -1,6 +1,8 @@
 name: PickingTips
 main: com.github.insdreamb.pickingtips.PickingTips
 version: 1.1.5
+depend:
+  - PowerNBT
 softdepend:
   - RPG_Items
   - MiaoChat
