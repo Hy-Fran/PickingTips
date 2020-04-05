@@ -1,9 +1,9 @@
-package main.java.com.github.insdreamb.pickingtips.listener;
+package com.github.insdreamb.pickingtips.listener;
 
-import main.java.com.github.insdreamb.pickingtips.PickingTips;
-import main.java.com.github.insdreamb.pickingtips.util.Limit;
-import main.java.com.github.insdreamb.pickingtips.util.NearbyEntities;
-import main.java.com.github.insdreamb.pickingtips.util.Variable;
+import com.github.insdreamb.pickingtips.PickingTips;
+import com.github.insdreamb.pickingtips.util.Limit;
+import com.github.insdreamb.pickingtips.util.NearbyEntities;
+import com.github.insdreamb.pickingtips.util.Variable;
 import me.dpohvar.powernbt.api.NBTCompound;
 import me.dpohvar.powernbt.api.NBTManager;
 import org.bukkit.entity.Player;

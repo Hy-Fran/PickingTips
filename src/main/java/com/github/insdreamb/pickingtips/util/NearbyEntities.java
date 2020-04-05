@@ -1,6 +1,6 @@
-package main.java.com.github.insdreamb.pickingtips.util;
+package com.github.insdreamb.pickingtips.util;
 
-import main.java.com.github.insdreamb.pickingtips.PickingTips;
+import com.github.insdreamb.pickingtips.PickingTips;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Item;
 import org.bukkit.event.entity.EntityDeathEvent;

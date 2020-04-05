@@ -1,9 +1,9 @@
-package main.java.com.github.insdreamb.pickingtips.listener.pickitem;
+package com.github.insdreamb.pickingtips.listener.pickitem;
 
-import main.java.com.github.insdreamb.pickingtips.PickingTips;
-import main.java.com.github.insdreamb.pickingtips.util.Limit;
-import main.java.com.github.insdreamb.pickingtips.util.SendTips;
-import main.java.com.github.insdreamb.pickingtips.util.Variable;
+import com.github.insdreamb.pickingtips.PickingTips;
+import com.github.insdreamb.pickingtips.util.Limit;
+import com.github.insdreamb.pickingtips.util.SendTips;
+import com.github.insdreamb.pickingtips.util.Variable;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;

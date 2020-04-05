@@ -1,8 +1,8 @@
-package main.java.com.github.insdreamb.pickingtips.command.sub;
+package com.github.insdreamb.pickingtips.command.sub;
 
-import main.java.com.github.insdreamb.pickingtips.PickingTips;
-import main.java.com.github.insdreamb.pickingtips.command.CommandSub;
-import main.java.com.github.insdreamb.pickingtips.util.Variable;
+import com.github.insdreamb.pickingtips.PickingTips;
+import com.github.insdreamb.pickingtips.command.CommandSub;
+import com.github.insdreamb.pickingtips.util.Variable;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 

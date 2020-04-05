@@ -1,4 +1,4 @@
-package main.java.com.github.insdreamb.pickingtips.util;
+package com.github.insdreamb.pickingtips.util;
 
 import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;

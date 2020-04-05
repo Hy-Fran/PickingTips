@@ -1,7 +1,7 @@
-package main.java.com.github.insdreamb.pickingtips.command.sub;
+package com.github.insdreamb.pickingtips.command.sub;
 
-import main.java.com.github.insdreamb.pickingtips.PickingTips;
-import main.java.com.github.insdreamb.pickingtips.command.CommandSub;
+import com.github.insdreamb.pickingtips.PickingTips;
+import com.github.insdreamb.pickingtips.command.CommandSub;
 import org.bukkit.command.CommandSender;
 
 public class ReloadCommand extends CommandSub {

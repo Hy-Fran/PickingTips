@@ -1,6 +1,6 @@
-package main.java.com.github.insdreamb.pickingtips.command;
+package com.github.insdreamb.pickingtips.command;
 
-import main.java.com.github.insdreamb.pickingtips.PickingTips;
+import com.github.insdreamb.pickingtips.PickingTips;
 import org.bukkit.command.CommandSender;
 
 public abstract class CommandSub{

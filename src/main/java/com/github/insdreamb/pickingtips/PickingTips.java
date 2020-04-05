@@ -1,14 +1,14 @@
-package main.java.com.github.insdreamb.pickingtips;
+package com.github.insdreamb.pickingtips;
 
-import main.java.com.github.insdreamb.pickingtips.command.sub.DisableBlock;
-import main.java.com.github.insdreamb.pickingtips.command.sub.DisableTips;
-import main.java.com.github.insdreamb.pickingtips.command.MainCommand;
-import main.java.com.github.insdreamb.pickingtips.command.sub.Help;
-import main.java.com.github.insdreamb.pickingtips.command.sub.ReloadCommand;
-import main.java.com.github.insdreamb.pickingtips.listener.Listener;
-import main.java.com.github.insdreamb.pickingtips.listener.pickitem.Anyway;
-import main.java.com.github.insdreamb.pickingtips.listener.pickitem.hasDisplayName;
-import main.java.com.github.insdreamb.pickingtips.util.Variable;
+import com.github.insdreamb.pickingtips.command.sub.DisableBlock;
+import com.github.insdreamb.pickingtips.command.sub.DisableTips;
+import com.github.insdreamb.pickingtips.command.MainCommand;
+import com.github.insdreamb.pickingtips.command.sub.Help;
+import com.github.insdreamb.pickingtips.command.sub.ReloadCommand;
+import com.github.insdreamb.pickingtips.listener.Listener;
+import com.github.insdreamb.pickingtips.listener.pickitem.Anyway;
+import com.github.insdreamb.pickingtips.listener.pickitem.hasDisplayName;
+import com.github.insdreamb.pickingtips.util.Variable;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
