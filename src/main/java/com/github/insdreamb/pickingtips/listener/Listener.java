@@ -29,7 +29,7 @@ public class Listener implements org.bukkit.event.Listener {
 
     @EventHandler
     private void onDeath(EntityDeathEvent event){
-            if ((Variable.entity.equalsIgnoreCase("all") || event.getEntity().getType().name().equalsIgnoreCase(Variable.entity)) && event.getEntity().getKiller() instanceof Player) {
+            if ((Variable.entity.equalsIgnoreCase("all") || event.getEntity().getType().name().equalsIgnoreCase(Variable.entity)) && event.getEntity().getKiller() != null ) {
                 NBTManager manager = NBTManager.nbtManager;
                 NBTCompound compound = manager.read(event.getEntity());
                 if (compound != null) {

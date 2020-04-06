@@ -3,6 +3,7 @@ package com.github.insdreamb.pickingtips.util;
 import com.github.insdreamb.pickingtips.PickingTips;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Item;
+import org.bukkit.entity.LivingEntity;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -11,7 +12,8 @@ import java.util.List;
 public class NearbyEntities {
 
     public NearbyEntities(PickingTips pickingTips, EntityDeathEvent event, String entityName){
-        Entity entity = event.getEntity();
+        LivingEntity entity = event.getEntity();
+        String killerName = entity.getKiller().getName();
         new BukkitRunnable(){
             @Override
             public void run() {
@@ -23,7 +25,7 @@ public class NearbyEntities {
                            List<String> list = Variable.drops.get(entityName);
                            for (int i1 = 0;i1 <list.size();i1++){
                                if (itemName.contains(list.get(i1))){
-                                   Variable.pickup.put(entities.get(i).getUniqueId(),event.getEntity().getKiller().getName());
+                                   Variable.pickup.put(entities.get(i).getUniqueId(),killerName);
                                    new Limit(pickingTips,entities.get(i).getUniqueId());
                                }
                            }
