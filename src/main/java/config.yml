@@ -12,28 +12,30 @@ message:
   #<item_name>为物品名字的变量 #<amount>为物品数量
   pick_success: "&a你获取了 <item_name> ×[<amount>]"
   #此处变量为物品名字<item_name> 玩家名字<player>
-  pick_fault: "&c这个掉落物品[<item_name>&c]不属于你 这是<player>的"
+  pick_fault: "&c这个掉落物品[<item_name>]不属于你 这是<player>的"
 Functions:
-#true为开 false为关
+  #true为开 false为关
   #物品有其他名字(非原版物品名字)才提示 false为显示原版物品名字（需要MiaoChat才能显示原版）
   displayname: true
-  #物品掉落绑定玩家（关联下面的Drops）
+  #是否开启指定NPC死亡后掉落物绑定玩家
   bind: true
   #物品掉落后绑定玩家多久(与丢弃保护一样)
-  bind_time: 20
+  bind_time: 10
   #拾取失败提示几秒发送一次
   block_time: 2
   #丢弃保护 默认给每个玩家开
   blocking_pickup: true
-  #获取实体死亡后多少半径附近的物品
+  #获取实体死亡后多少半径附近的掉落物
   X: 3
   Y: 3
   Z: 3
-  #指定哪种实体才会进行绑定判断 改为all为全部（未测试是否支持） null为不启用 此处为自定义NPC
+  #指定哪种实体才会进行绑定判断 改为all为全部（未测试是否支持其他插件） null为不启用 此处为自定义NPC
   entity: 'CUSTOMNPCS_CUSTOMNPC'
   #强行注销RPG_Items监听玩家拾取事件监听器(RPG_Items会吞取暂时绑定在玩家的掉落物品)
   Unregister: false
-#掉落物 名字判定(包含即可) 实体名字必须对应
+#掉落物
 Drops:
+  #名字 必须与NPC的名字一致
   僵尸:
+    #判断物品名字包含不包含下列 (不一定物品名字一定要与原来的完全对上)
     - '§a草'
