@@ -35,7 +35,7 @@ public class hasDisplayName implements Listener {
             }
         }
         else {
-            String name = pickingTips.getItemname(item);
+            if (!item.hasItemMeta() || !item.getItemMeta().hasDisplayName()) return;
             if (Variable.sendTips(event.getPlayer(),item)) SendTips.sendTips(item,event.getPlayer(),item.getItemMeta().getDisplayName());
         }
     }
